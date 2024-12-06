@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 
 const Counter = function () {
-    const [cont, setCount] = useState (0)
+    const [count, setCount] = useState (0)
 
     function increment () {
-        setLikes(likes + 1)
+      setCount(count + 1)
       }
     
       function decrement () {
-        setLikes(likes - 1)
+        setCount(count - 1)
       }
 
-    return {
-        
-        
-       
-    }
+    return (
+        <div> 
+          <h1>{count}</h1>
+          <button onClick={increment}>Увеличить</button>
+          <button onClick={decrement}>Уменьшить</button>
+        </div>       
+    )
 }
 
 export default Counter;
