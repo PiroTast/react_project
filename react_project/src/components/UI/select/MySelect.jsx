@@ -1,4 +1,5 @@
 import React from 'react';
+import PostFilter from '../../PostFilter';
 
 const MySelect = ({options, defaultValue, value, onChange}) => {
     return (
